@@ -1,4 +1,5 @@
 import { IoPersonCircleSharp } from "react-icons/io5";
+import Cookie from 'js-cookie';
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
 import {
@@ -16,6 +17,7 @@ const LoguotPopup = () => {
     }
 
     const onClickLogout = () => {
+        Cookie.remove('jwt_token')
         window.location.href = '/login'
     }
 

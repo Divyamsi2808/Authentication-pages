@@ -1,5 +1,7 @@
 import { useState } from "react";
+import Cookie from 'js-cookie';
 import { BiShow, BiHide } from "react-icons/bi";
+import { v4 as uuidv4 } from 'uuid';
 
 import "./index.css"
 
@@ -21,6 +23,10 @@ const LoginSection = () => {
             }else if (userObj.password !== password) {
                 onChangeErrorMsg("Incorect Password")
             }else{
+                Cookie.set('jwt_token', uuidv4(), {
+                    expires: 30,
+                    path: '/',
+                  })
                 updatePassword("");
                 updateUsername("");
                 changePasswordStatus(true);

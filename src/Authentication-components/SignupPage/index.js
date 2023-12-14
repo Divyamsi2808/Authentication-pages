@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Cookie from 'js-cookie';
+import { v4 as uuidv4 } from 'uuid';
 import { BiShow, BiHide } from "react-icons/bi";
 
 import "./index.css"
@@ -32,6 +34,10 @@ const SignupSection = () => {
                     onChangeErrorMsg("username alredy Exits")
                 }else{
                     localStorage.setItem("userList", JSON.stringify([newObj,...userList]));
+                    Cookie.set('jwt_token', uuidv4(), {
+                        expires: 30,
+                        path: '/',
+                      })
                     updateUsername("");
                     updateEmail("");
                     updatePhone("");
