@@ -36,11 +36,9 @@
 <li>The user is considered logged out.</li>
 </ul>
 
-<div style="text-align: center;">
-     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
+<video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
     <source src="https://res.cloudinary.com/dxaugnoxj/video/upload/v1702538027/samples/React_App_-_Google_Chrome_2023-12-14_12-34-42_dmigkd.mp4" type="video/mp4">
   </video>
-</div>
 
 <h2>Setup</h2>
 <h3>To run the project locally, follow these steps:</h3>
