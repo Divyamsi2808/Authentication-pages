@@ -1,17 +1,12 @@
-import { useEffect } from 'react';
+import {Redirect} from "react-router-dom"
 import Cookie from 'js-cookie';
 import LoguotPopup from "../LogoutPopup";
+import LoginSection from "../LoginPage"
 
 const HomeSection = () => {
+    const token = Cookie.get('jwt_token')
 
-    useEffect(() => {
-        const token = Cookie.get('jwt_token')
-        if (token === undefined) {
-            window.location.href = '/login';
-        }
-    },[])
-
-    return (
+    const renderHomePage = () => (
         <div className='h-screen w-full'>
             <div className="flex flex-col">
                 <div className=" bg-cyan-300 w-full px-4 h-[120px] flex items-center justify-between">
@@ -29,6 +24,22 @@ const HomeSection = () => {
                 </div>
             </div>
         </div>
+    )
+
+    const renderPage = () => {
+        if (token === undefined) {
+                return <Redirect to = "/login" />
+        }else{
+            return renderHomePage()
+        }
+    }
+
+    return (
+        <>
+        {
+            renderPage()
+        }
+        </>
     )
 }
 
