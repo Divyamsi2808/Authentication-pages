@@ -61,7 +61,7 @@ const LoginSection = () => {
                         </button>
                         </div>
                     </div>
-                    <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'>SignUp</button>
+                    <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'>Login</button>
                     {
                         errorMsg !== "" && <p className=" text-red-600">*{errorMsg}</p>
                     }

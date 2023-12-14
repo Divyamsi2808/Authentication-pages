@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+<h1>Signup, Login, and Logout with User Authentication</h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Overview</h2>
+<p>This project is a basic implementation of a user authentication system using JavaScript, ReactJS, and Tailwind CSS. It includes a responsive signup, login, and logout page where users can sign up with a username and password, log in, and log out.</p>
 
-## Available Scripts
+<h2>Technologies Used</h2>
+<ul>
+<li>JavaScript: The programming language used for client-side logic.</li>
+<li>ReactJS: The JavaScript library used for building user interfaces.</li>
+<li>Tailwind CSS: A utility-first CSS framework for styling the application.</li>
+</ul>
 
-In the project directory, you can run:
 
-### `npm start`
+<h2>Functionality</h2>
+<h3>Signup</h3>
+<ul>
+<li>Users need to enter a username, email, phone and password.</li>
+<li>Clicking the "Signup" button triggers the onSignup function.Then it verify the user is already exits or not.If new user creat an account then it will redirects to the home page.</li>
+<li>The userslist data is stored in localStorage for simulation.Each user details are store in the usersList in the localStorage as a object</li>
+</ul>
+<img src = "https://res.cloudinary.com/dxaugnoxj/image/upload/v1702537908/samples/Screenshot_2023-12-14_123136_hxy75o.png"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3>Login</h3>
+<ul>
+<li>Users can enter their username and password.</li>
+<li>Clicking the "Login" button triggers the onClickLogin function.</li>
+<li>The user data is retrieved from localStorage for simulation.</li>
+<li>If the entered credentials match, the user is considered logged in.</li>
+</ul>
+<img src = "https://res.cloudinary.com/dxaugnoxj/image/upload/v1702537907/samples/Screenshot_2023-12-14_123157_dpxkru.png"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3>Logout</h3>
+<ul>
+<li>Clicking the "Logout" button triggers the onLogout function.</li>
+<li>The user data is removed from localStorage for simulation.</li>
+<li>The user is considered logged out.</li>
+</ul>
 
-### `npm test`
+<div style="text-align: center;">
+     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
+    <source src="https://res.cloudinary.com/dxaugnoxj/video/upload/v1702538027/samples/React_App_-_Google_Chrome_2023-12-14_12-34-42_dmigkd.mp4" type="video/mp4">
+  </video>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>Setup</h2>
+<h3>To run the project locally, follow these steps:</h3>
+<ul>
+<li>Clone the repository:</li>
 
-### `npm run build`
+```
+gh repo clone Divyamsi2808/Authentication-pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+<li>Navigate to the project directory:</li>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cd authenticationpages
+```
+<li>Install dependencies:</li>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm install
+```
+</ul>
