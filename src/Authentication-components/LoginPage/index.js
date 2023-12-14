@@ -16,6 +16,11 @@ const LoginSection = () => {
 
             const userList = JSON.parse(localStorage.getItem("userList"));
 
+            if (userList === null) {
+                onChangeErrorMsg("username is not exits")
+                return;
+            }
+
             const userObj = userList.find((eachObj) => (eachObj.username === username))
 
             if (userObj === undefined) {

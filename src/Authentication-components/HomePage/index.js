@@ -16,10 +16,13 @@ const HomeSection = () => {
                         <LoguotPopup/>
                     }
                 </div>
-                <div className="h-full">
-                <h1 className="text-[30px] font-bold font-serif self-center">
+                <div className="self-center flex-grow-1 flex flex-col justify-center w-full h-[60vh]">
+                <h1 className="text-[30px] font-bold font-serif self-center text-zinc-700 ">
                     Welcome to Emo energy
                 </h1>
+                <button className=" bg-sky-300 rounded-2xl px-6 py-3 outline-none border self-center">
+                    Visit Now
+                </button>
                 </div>
             </div>
         </div>

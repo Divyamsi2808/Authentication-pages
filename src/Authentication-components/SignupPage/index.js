@@ -27,6 +27,10 @@ const SignupSection = () => {
             
             if (userList === null) {
                 localStorage.setItem("userList", JSON.stringify([newObj]));
+                Cookie.set('jwt_token', uuidv4(), {
+                    expires: 30,
+                    path: '/',
+                  })
                 window.location.href = '/';
             }else{
                 const isUserExits = userList.some((eachObj) => (eachObj.username === username))
