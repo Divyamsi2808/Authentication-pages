@@ -1,7 +1,6 @@
 import {Redirect} from "react-router-dom"
 import Cookie from 'js-cookie';
 import LoguotPopup from "../LogoutPopup";
-import LoginSection from "../LoginPage"
 
 const HomeSection = () => {
     const token = Cookie.get('jwt_token')
